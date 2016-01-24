@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/operation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/select_camer_Image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="拍照图片" />
+
+        <Button
+            android:id="@+id/selectImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="选择图片" />
+
+        <TextView
+            android:id="@+id/uploadImageResult"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/uploadImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="上传图片" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/operation_layout"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:horizontalSpacing="2dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp" />
+</RelativeLayout>
